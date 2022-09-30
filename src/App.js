@@ -4,6 +4,7 @@ import BackCard from "./Components/BackCard";
 import Form from "./Components/Form";
 import FrontCard from "./Components/FrontCard";
 
+
 function App() {
   const [number, setNumber] = useState("");
   const [name, setName] = useState("");
@@ -30,13 +31,13 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className="background"></div>
       <FrontCard number={number} name={name} year={year} month={month} />
       <BackCard cvc={cvc} />
       <Form setters={setters} propsInfo={props}/>
-      
   
-    </div>
+   </div>
   );
 }
 

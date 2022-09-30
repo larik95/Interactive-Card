@@ -55,7 +55,7 @@ const Form = ({ setters, propsInfo }) => {
     name === "" ? setNameError("Can't be blank") : setNameError("");
     if (month === "" || year === "") {
       setDateError("Can't be blank");
-    } else if (month > 12 || year < 22) {
+    } else if (month > 12 || month < 0 || year < 22) {
       setDateError("Invalid date");
     } else setDateError("");
     verifyNan(cvc, setCVCError);

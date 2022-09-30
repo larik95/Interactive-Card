@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import frontCardImg from "../desing/bg-card-front.png";
+
+
+
+
 // FORM STYLE
 export const CardFormContainer = styled.div`
   position: absolute;
@@ -12,12 +16,16 @@ export const CardFormContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+
   @media (max-width: 500px) {
     left: 0;
     top: 40%;
     position: fixed;
-    width: 100%;
-  }
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 `;
 
 export const CardForm = styled.form`
@@ -70,15 +78,16 @@ export const CardDateContainer = styled.div`
 `;
 export const Button = styled.button`
   font-family: "Space Grotesk", sans-serif;
-  height: 40px;
+  padding: 10px;
   width: 100%;
   background-color: var(--v-dark-violet);
   color: var(--white);
-  border-radius: 7px;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
   @media (max-width: 500px) {
     font-size: 18px;
+   
   }
 `;
 export const DateContainer = styled.div`
@@ -162,3 +171,4 @@ export const CardDate = styled.p`
   top: 80%;
   letter-spacing: 1px;
 `;
+

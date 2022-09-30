@@ -13,7 +13,7 @@ const FormOk = () => {
         <Subtitle>
             We've added your card details
         </Subtitle>
-        <Button onClick={() => document.location.reload()}>Continue</Button>
+        <ButtonOk onClick={() => document.location.reload()}>Continue</ButtonOk>
     </CardFormContainer>
   )
 }
@@ -29,4 +29,13 @@ margin-top: 20px;
 const Subtitle =styled.p `
 color: var(--d-grayish-violet);
 margin-top: 20px;
+`
+const ButtonOk = styled.button `
+background-color: var(--v-dark-violet);
+color: var(--white);
+width: 80%;
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+border: none;
 `
